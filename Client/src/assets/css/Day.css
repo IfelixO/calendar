@@ -1,0 +1,9 @@
+.day-all {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    width: 1000px;
+}

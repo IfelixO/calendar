@@ -1,0 +1,10 @@
+.scale-block {
+    height: 80px;
+    background-color: hsl(90, 100%, 85%);
+    border-bottom: solid 1px #444 ;
+    text-align: center;
+}
+
+.scale-all  {
+    width: 12.5%;
+}

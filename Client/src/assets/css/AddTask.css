@@ -1,0 +1,112 @@
+.addtask-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(90, 100%,85%);
+    width: fit-content;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 3;
+    top: 200px;
+    left: 41vw;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5);
+}
+.addtask-title {
+    font-size: 1.5rem;
+}
+
+.addtask-textarea {
+    width: 220px;
+    height: max-content;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.addtask-input {
+    width: 120px;
+    height: fit-content;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.addtask-label dssd{
+    font-size: .7rem;
+}
+
+.addtask-submit {
+    border-radius: 5px;
+    padding: 3px;
+    width: 70px;
+    background-color: hsl(90, 100%, 60%);
+    text-align: center;
+    font-size: .8rem;
+    border: solid 2px #444;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.addtask-submit:hover {
+    background-color: hsl(90, 100%, 40%);
+}
+
+.addtask-background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-areas: 
+    'TT TT'
+    'TA TA'
+    'BDL BDI'
+    'BHL BHI'
+    'EDL EDI'
+    'EHL EHI'
+    'BT BT'
+    ;
+    margin-right: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+#TA {
+    grid-area: TA;
+}
+#BDL {
+    grid-area: BDL;
+}
+#BHL {
+    grid-area: BHL;
+}
+#EDL {
+    grid-area: EDL;
+}
+#EHL {
+    grid-area: EHL;
+}
+#BDI {
+    grid-area: BDI;
+}
+#BHI {
+    grid-area: BHI;
+}
+#EDI {
+    grid-area: EDI;
+}
+#EHI {
+    grid-area: EHI;
+}
+#BT {
+    grid-area: BT;
+}
+#TT {
+    grid-area: TT;
+}

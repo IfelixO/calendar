@@ -1,0 +1,153 @@
+.taskDetails-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(90, 100%,85%);
+    width: fit-content;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 3;
+    top: 200px;
+    left: 32.5vw;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5);
+}
+
+.taskDetails-title {
+    font-size: 1.5rem;
+}
+
+.taskDetails-textarea {
+    width: 220px;
+    height: max-content;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.taskDetails-input {
+    width: 120px;
+    height: fit-content;
+    padding: 3px;
+}
+
+.taskDetails-label {
+    font-size: .7rem;
+}
+
+.taskDetails-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 20px;
+}
+
+.taskDetails-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.taskDetails-button {
+    border-radius: 5px;
+    padding: 3px;
+    width: 70px;
+    background-color: hsl(90, 100%, 60%);
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font-size: .8rem;
+    border: solid 2px #444;
+    font-weight: 600;
+}
+
+.taskDetails-button:hover {
+    background-color: hsl(90, 100%, 40%);
+}
+
+.taskDetails-background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+
+.details {
+    display: flex;
+    gap: 20px;
+}
+
+.details-img {
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+}
+
+.taskDetails-status {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.taskDetails-select {
+    width: 100%;
+}
+
+.previous-values {
+    text-align: right;
+}
+
+.previous, .new {
+    width: 220px;
+}
+
+.new {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-areas: 
+    'TA TA'
+    'BDL BDI'
+    'BHL BHI'
+    'EDL EDI'
+    'EHL EHI'
+    'ST ST'
+    ;
+    margin-right: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+#TA {
+    grid-area: TA;
+}
+#BDL {
+    grid-area: BDL;
+}
+#BHL {
+    grid-area: BHL;
+}
+#EDL {
+    grid-area: EDL;
+}
+#EHL {
+    grid-area: EHL;
+}
+#BDI {
+    grid-area: BDI;
+}
+#BHI {
+    grid-area: BHI;
+}
+#EDI {
+    grid-area: EDI;
+}
+#EHI {
+    grid-area: EHI;
+}
+#ST {
+    grid-area: ST;
+}

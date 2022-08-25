@@ -1,0 +1,49 @@
+.login-enter, .login-register {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: hsl(90, 100%, 85%);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.login-enter {
+    position: absolute;
+    top: 30px;
+    right: 180px;
+}
+
+.login-register {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+.login-enter:hover, .login-register:hover {
+    background-color: hsl(90, 100%, 70%);
+}
+
+.login-img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.login-logout {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 38px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.login-logout-img {
+    width: 20px;
+}
