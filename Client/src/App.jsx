@@ -49,6 +49,8 @@ function App() {
   }
 
 
+// Create
+
   const handleTaskAddition = (task) => {
     if (person == "default") {
       alert('Por favor, acesse na sua conta ou registre-se para continuar')
@@ -73,6 +75,8 @@ function App() {
     }   
   }
 
+// Read
+
   useEffect(() => {
     const getTasks = async () => {
       Axios.get('http://localhost:5000/getTasks').then((response) =>{
@@ -83,13 +87,7 @@ function App() {
   }
   )
 
-  const handleDeletion = (id) => {
-    Axios.post('http://localhost:5000/deleteTask', {
-      id: id
-    }).then((response) => {
-      console.log(response.data)
-    })
-  }
+// Update
 
   const handleEdit = (task) => {
     console.log(task)
@@ -110,7 +108,16 @@ function App() {
 
     }
 
-    
+// Delete
+
+const handleDeletion = (id) => {
+  Axios.post('http://localhost:5000/deleteTask', {
+    id: id
+  }).then((response) => {
+    console.log(response.data)
+  })
+}
+
   const handleOpenEdit = (task)  => {
     setTaskDetails(task)
     setDetaisVisibilty(true)

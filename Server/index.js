@@ -19,6 +19,8 @@ app.use(express.json())
 app.use(bp.json())
 app.use(bp.urlencoded({extended: true}))
 
+// Create
+
 app.post('/addition', (req, res) => {
     const {title} = req.body;
     const {description} = req.body;
@@ -42,6 +44,24 @@ app.post('/addition', (req, res) => {
     })
 })
 
+// Read
+
+app.get('/getTasks', (req, res) => {
+
+    let SQL = "SELECT * from tasks"
+
+    db.query(SQL, (err, result) => {
+        if(err){
+            console.log(err)
+        } else {
+            res.send(result)
+        }
+    })
+
+})
+
+// Update
+
 app.post('/edit', (req, res) => {
     const {id} = req.body;
     const {description} = req.body;
@@ -63,6 +83,8 @@ app.post('/edit', (req, res) => {
     })
 })
 
+// Delete
+
 app.post('/deleteTask', (req, res) => {
     const {id} = req.body;
 
@@ -75,20 +97,6 @@ app.post('/deleteTask', (req, res) => {
             res.send({msg: 'sucess'})
         }
     })
-})
-
-app.get('/getTasks', (req, res) => {
-
-    let SQL = "SELECT * from tasks"
-
-    db.query(SQL, (err, result) => {
-        if(err){
-            console.log(err)
-        } else {
-            res.send(result)
-        }
-    })
-
 })
 
 app.post('/register', (req, res) => {
